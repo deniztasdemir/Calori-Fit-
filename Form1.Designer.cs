@@ -30,13 +30,14 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_Email = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txt_Sifre = new System.Windows.Forms.TextBox();
+            this.btn_Giris = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_YeniKayit = new System.Windows.Forms.Button();
+            this.lbl_UyariMesaj = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -64,12 +65,12 @@
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
+            // txt_Email
             // 
-            this.textBox1.Location = new System.Drawing.Point(215, 108);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(119, 20);
-            this.textBox1.TabIndex = 3;
+            this.txt_Email.Location = new System.Drawing.Point(215, 108);
+            this.txt_Email.Name = "txt_Email";
+            this.txt_Email.Size = new System.Drawing.Size(119, 20);
+            this.txt_Email.TabIndex = 3;
             // 
             // label3
             // 
@@ -93,55 +94,68 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Şifre :";
             // 
-            // textBox2
+            // txt_Sifre
             // 
-            this.textBox2.Location = new System.Drawing.Point(215, 141);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(119, 20);
-            this.textBox2.TabIndex = 6;
+            this.txt_Sifre.Location = new System.Drawing.Point(215, 141);
+            this.txt_Sifre.Name = "txt_Sifre";
+            this.txt_Sifre.Size = new System.Drawing.Size(119, 20);
+            this.txt_Sifre.TabIndex = 6;
             // 
-            // button1
+            // btn_Giris
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(215, 178);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Giriş";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_Giris.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_Giris.Location = new System.Drawing.Point(215, 203);
+            this.btn_Giris.Name = "btn_Giris";
+            this.btn_Giris.Size = new System.Drawing.Size(94, 23);
+            this.btn_Giris.TabIndex = 7;
+            this.btn_Giris.Text = "Giriş";
+            this.btn_Giris.UseVisualStyleBackColor = true;
+            this.btn_Giris.Click += new System.EventHandler(this.btn_Giris_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(215, 207);
+            this.button2.Location = new System.Drawing.Point(215, 244);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 23);
             this.button2.TabIndex = 8;
             this.button2.Text = "Antrenör Giriş";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn_YeniKayit
             // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(215, 254);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 23);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Yeni Kayıt";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_YeniKayit.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_YeniKayit.Location = new System.Drawing.Point(215, 273);
+            this.btn_YeniKayit.Name = "btn_YeniKayit";
+            this.btn_YeniKayit.Size = new System.Drawing.Size(94, 23);
+            this.btn_YeniKayit.TabIndex = 9;
+            this.btn_YeniKayit.Text = "Yeni Kayıt";
+            this.btn_YeniKayit.UseVisualStyleBackColor = true;
+            this.btn_YeniKayit.Click += new System.EventHandler(this.btn_YeniKayit_Click);
+            // 
+            // lbl_UyariMesaj
+            // 
+            this.lbl_UyariMesaj.AutoSize = true;
+            this.lbl_UyariMesaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_UyariMesaj.ForeColor = System.Drawing.Color.Red;
+            this.lbl_UyariMesaj.Location = new System.Drawing.Point(173, 183);
+            this.lbl_UyariMesaj.Name = "lbl_UyariMesaj";
+            this.lbl_UyariMesaj.Size = new System.Drawing.Size(0, 15);
+            this.lbl_UyariMesaj.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(495, 308);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.lbl_UyariMesaj);
+            this.Controls.Add(this.btn_YeniKayit);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btn_Giris);
+            this.Controls.Add(this.txt_Sifre);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_Email);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -156,13 +170,14 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_Email;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txt_Sifre;
+        private System.Windows.Forms.Button btn_Giris;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_YeniKayit;
+        private System.Windows.Forms.Label lbl_UyariMesaj;
     }
 }
 
